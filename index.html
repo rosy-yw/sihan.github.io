@@ -7,7 +7,8 @@
   <meta name="description" content="Academic website of Sihan Zhou." />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
-<body data-tone="about">
+
+<body class="home" data-tone="about">
 <header class="site-header">
   <div class="container header-inner">
     <div class="brand">
@@ -27,119 +28,142 @@
 </header>
 
 <main class="container">
-  <div class="scrolly">
-    <div class="stage" aria-hidden="true">
-      <div class="portrait-wrap">
-        <img class="portrait" src="assets/avatar.jpg" alt="Portrait of Sihan Zhou" />
-      </div>
-    </div>
+  <!-- Top profile block  -->
+  <section class="profile">
+    <!-- put portrait at assets/avatar.jpg -->
+    <img class="avatar-top" src="assets/avatar.jpg" alt="Portrait of Sihan Zhou" />
+    <h1 class="name">Sihan Zhou</h1>
+    <div class="role">Assistant Professor · Applied Linguistics · Self-regulated Listening · EMI</div>
+    <div class="affil">The Chinese University of Hong Kong | Faculty of Education | Department of Curriculum and Instruction</div>
 
-    <div class="panels">
-      <section class="panel" data-tone="about">
-        
-        <figure class="panel-media">
-          <img src="assets/img/p1.jpg" alt="Project visual" loading="lazy">
-            <figcaption class="small">One-line caption for context (optional).</figcaption>
+    <div class="pills">
+      <a href="https://scholar.google.com/citations?hl=en&user=duCsCeUAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+      <a href="https://www.researchgate.net/profile/Sihan-Zhou-2" target="_blank" rel="noopener noreferrer">ResearchGate</a>
+      <a href="files/CV.pdf">CV (PDF)</a>
+      <a href="sihanzhou@cuhk.edu.hk">Email</a>
+    </div>
+  </section>
+
+  <!-- Scrolling glass panels -->
+  <div class="panels">
+    <!-- Gallery panel -->
+    <section class="panel" data-tone="gallery">
+      <div class="kicker">Selected visuals</div>
+      <h2>Scrolling image panel</h2>
+      <p class="lead">
+        Text
+      </p>
+
+      <!-- folder assets/img/ and add 01.jpg ... 04.jpg -->
+      <div class="gallery" aria-label="Image gallery">
+        <figure class="g-item">
+          <img src="assets/img/01.jpg" alt="Gallery image 01" loading="lazy">
+          <figcaption class="cap">Caption for image 01.</figcaption>
         </figure>
 
-        <div class="kicker">About</div>
-        <h1>Sihan Zhou</h1>
-        <p class="lead">
-          Replace this with a sharp positioning statement: what problem domain, what theoretical angle, what methods, and what contexts.
-        </p>
+        <figure class="g-item">
+          <img src="assets/img/02.jpg" alt="Gallery image 02" loading="lazy">
+          <figcaption class="cap">Caption for image 02.</figcaption>
+        </figure>
 
-        
-        <div class="meta">
-          <div><span class="k">Affiliation:</span> University / Department</div>
-          <div><span class="k">Email:</span> <a href="mailto:someone@university.edu">someone@university.edu</a></div>
-          <div class="pills">
-            <a href="#" rel="noopener">Google Scholar</a>
-            <a href="#" rel="noopener">ORCID</a>
-            <a href="files/CV.pdf">CV (PDF)</a>
-          </div>
+        <figure class="g-item">
+          <img src="assets/img/03.jpg" alt="Gallery image 03" loading="lazy">
+          <figcaption class="cap">Caption for image 03.</figcaption>
+        </figure>
+
+        <figure class="g-item">
+          <img src="assets/img/04.jpg" alt="Gallery image 04" loading="lazy">
+          <figcaption class="cap">Caption for image 04.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="panel" data-tone="about">
+      <div class="kicker">About</div>
+      <h2>Positioning</h2>
+      <p class="lead">
+        Replace this paragraph
+      </p>
+      <hr class="sep" />
+      <p class="small">
+        Replace this paragraph
+      </p>
+    </section>
+
+    <!-- Research -->
+    <section class="panel" data-tone="research">
+      <div class="kicker">Research</div>
+      <h2>Research agenda</h2>
+      <p class="lead">
+        Replace this paragraph
+      </p>
+
+      <h3 style="margin-top:14px;">Theme / Project A</h3>
+      <p class="small">Replace this paragraph</p>
+
+      <h3 style="margin-top:14px;">Theme / Project B</h3>
+      <p class="small">Replace this paragraph</p>
+
+      <div class="small" style="margin-top:12px;">
+        More on <a href="research.html">Research page</a>.
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section class="panel" data-tone="pubs">
+      <div class="kicker">Publications</div>
+      <h2>Selected publications</h2>
+
+      <div class="pub">
+        <div class="cite">
+          Zhou, S., &amp; Coauthor. (2025). Article title. <em>Journal</em>, volume(issue), pages.
         </div>
-      </section>
-
-      <section class="panel" data-tone="research">
-        <div class="kicker">Featured Research</div>
-        <h2>Research agenda</h2>
-        <p class="lead">
-          Summarise the agenda in 3–5 sentences. Keep it concrete: constructs, datasets, methods, and contributions.
-        </p>
-
-        <hr class="sep" />
-
-        <h3>Theme / Project A</h3>
-        <p class="small">Problem → approach → contribution, in one tight paragraph.</p>
-
-        <h3 style="margin-top:14px;">Theme / Project B</h3>
-        <p class="small">Problem → approach → contribution, in one tight paragraph.</p>
-
-        <h3 style="margin-top:14px;">Theme / Project C</h3>
-        <p class="small">Problem → approach → contribution, in one tight paragraph.</p>
-
-        <div class="meta">
-          <div><span class="k">More:</span> <a href="research.html">Research page</a></div>
+        <div class="tools">
+          <a href="#" rel="noopener">DOI</a>
+          <a href="#" rel="noopener">PDF</a>
         </div>
-      </section>
+      </div>
 
-      <section class="panel" data-tone="pubs">
-        <div class="kicker">Selected Publications</div>
-        <h2>Recent outputs</h2>
-
-        <div class="pub">
-          <div class="cite">
-            Zhou, S., &amp; Coauthor. (2025). Article title. <em>Journal</em>, volume(issue), pages.
-          </div>
-          <div class="tools">
-            <a href="#" rel="noopener">DOI</a>
-            <a href="#" rel="noopener">PDF</a>
-          </div>
+      <div class="pub">
+        <div class="cite">
+          Zhou, S. (2024). Article title. <em>Journal</em>, volume(issue), pages.
         </div>
-
-        <div class="pub">
-          <div class="cite">
-            Zhou, S. (2024). Article title. <em>Journal</em>, volume(issue), pages.
-          </div>
-          <div class="tools">
-            <a href="#" rel="noopener">DOI</a>
-          </div>
+        <div class="tools">
+          <a href="#" rel="noopener">DOI</a>
         </div>
+      </div>
 
-        <div class="meta">
-          <div><span class="k">Full list:</span> <a href="publications.html">Publications</a></div>
-        </div>
-      </section>
+      <div class="small" style="margin-top:12px;">
+        Full list on <a href="publications.html">Publications</a>.
+      </div>
+    </section>
 
-      <section class="panel" data-tone="teaching">
-        <div class="kicker">Teaching & Service</div>
-        <h2>Professional roles</h2>
-        <p class="lead">
-          Keep this short and confident. Mention signature courses, supervision scope, and community roles.
-        </p>
+    <!-- Teaching & Service -->
+    <section class="panel" data-tone="teaching">
+      <div class="kicker">Teaching &amp; Service</div>
+      <h2>Professional roles</h2>
+      <p class="lead">
+        Mention signature courses, supervision scope, and key community roles in two short paragraphs.
+      </p>
+      <div class="small">
+        <a href="teaching.html">Teaching</a> · <a href="service.html">Service</a>
+      </div>
+    </section>
 
-        <div class="meta">
-          <div><span class="k">Teaching:</span> <a href="teaching.html">Teaching</a></div>
-          <div><span class="k">Service:</span> <a href="service.html">Service</a></div>
-        </div>
-      </section>
+    <!-- Contact -->
+    <section class="panel" data-tone="contact">
+      <div class="kicker">Contact</div>
+      <h2>Get in touch</h2>
+      <p class="lead">Replace this paragraph</p>
+      <div class="small">
+        <a href="mailto:someone@university.edu">sihanzhou@cuhk.edu.hk</a> · <a href="contact.html">Contact page</a>
+      </div>
 
-      <section class="panel" data-tone="contact">
-        <div class="kicker">Contact</div>
-        <h2>Get in touch</h2>
-        <p class="lead">
-          Email is the fastest route for academic enquiries and collaborations.
-        </p>
-        <div class="meta">
-          <div><span class="k">Email:</span> <a href="mailto:someone@university.edu">someone@university.edu</a></div>
-          <div><span class="k">Contact page:</span> <a href="contact.html">Contact</a></div>
-        </div>
-
-        <footer class="footer">
-          <div>© <span id="year"></span> Sihan Zhou. Hosted on GitHub Pages.</div>
-        </footer>
-      </section>
-    </div>
+      <footer class="footer">
+        <div>© <span id="year"></span> Sihan Zhou. Hosted on GitHub Pages.</div>
+      </footer>
+    </section>
   </div>
 </main>
 
